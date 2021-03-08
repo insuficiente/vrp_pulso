@@ -1,2 +1,2 @@
 # vrp_pulso
-Script de pulso para SAMU/EMS. Framework: vRP.
+Script de pulso para SAMU/EMS.
