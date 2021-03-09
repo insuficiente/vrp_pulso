@@ -23,7 +23,7 @@ Atualização: 08/03/2021 | v1.1.0
 Não tente revender este script/plugin, é totalmente feito pela nossa comunidade e não por você.
 Seria bem feio da sua parte vender um plugin gratuito, hein?
 ]]
-local Pulso_CFG
+local Pulso_CFG = {}
 
 -- Permissão do EMS/Médico
 Pulso_CFG.Ems_Perm = "ems.permissao"
