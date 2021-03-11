@@ -52,5 +52,6 @@ Pulso_CFG.Tempo_Respawn = 600
 <br>
 *O tempo que você colocar será dividido por **três**, e cada terço será uma parte para cada estado do player.
 Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
+<br>
 
 ## DÚVIDAS?
