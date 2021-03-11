@@ -48,4 +48,4 @@ Pulso_CFG.Adm_Perm = "administrador.permissao"
 -- Tempo de respawn, será dividida em três partes(Ótimo estado, Estado de Alerta e Estado Grave)
 Pulso_CFG.Tempo_Respawn = 600 
 ```
-^^^ Altere para o tempo total que você deseja que o player fique vivo até certo ponto.
+^^^ Altere para o tempo que você deseja. Recomendo o mesmo tempo que demora para o seu player poder respawnar novamente no servidor.
