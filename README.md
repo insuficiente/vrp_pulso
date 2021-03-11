@@ -1,4 +1,4 @@
-# VRP_PULSO [**ÚNICO:CONFIGURÁVEL**] || [**vRPeX**]
+# VRP_PULSO [**CONFIGURÁVEL**] || [**vRPeX**]
 
 > Precisa de algum plugin próprio para o seu servidor? Nos dê um toque no nosso Discord para encomendar um plugin totalmente pensado por **você**. Montaremos um orçamento justo pelo o que o plugin te oferece.
 
