@@ -41,7 +41,8 @@ Pulso_CFG.Ems_Perm = "ems.permissao"
 -- Permissão do Admin
 Pulso_CFG.Adm_Perm = "administrador.permissao"
 ```
-Altere para as permissões para a qual você utiliza.
+Altere para as permissões qual você utiliza.
+<br>
 <br>
 ```lua
 -- Tempo de respawn, será dividida em três partes(Ótimo estado, Estado de Alerta, Estado Grave)
