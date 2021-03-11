@@ -50,7 +50,6 @@ Pulso_CFG.Tempo_Respawn = 600
 ```
 ^^^ Altere para o tempo que você deseja. Recomendo o mesmo tempo que demora para o seu player poder respawnar novamente no seu servidor.
 <br>
-Exemplo como ficaria com 600 segundos no tempo de respawn:
-- ÓTIMO ESTADO (**80Bpm - 100Bpm**) || (⅓ de 600)
-- ESTADO DE ALERTA (**50Bpm - 70Bpm**) || (⅓ de 600)
-- ESTADO GRAVE (**30Bpm - 45Bpm**) || (⅓ de 600)
+O tempo que você colocar será dividido por três, e cada terço será uma parte para cada estado do player.
+<br>
+Com 600 segundos, o estado do player irá mudar a cada 200 segundos passados.
