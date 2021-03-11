@@ -58,3 +58,5 @@ Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
 ## DÚVIDAS?
 Estou na minha comunidade te esperando para te ajudar!
 Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/Exjftynpe9
+
+Desejamos um ótimo Roleplay para a sua cidade.
