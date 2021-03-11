@@ -56,3 +56,4 @@ Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
 <br>
 
 ## DÚVIDAS?
+Estou aqui para te ajudar!
