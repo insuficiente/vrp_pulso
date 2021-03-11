@@ -11,4 +11,6 @@
                  \/     \/                     \/        \/     \/          \/ 
 ```
 
+<br>
+
 ## Como funciona este script?
