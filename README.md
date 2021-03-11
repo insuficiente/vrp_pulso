@@ -13,5 +13,5 @@
 
 <br>
 
-> ## Como funciona este script? 🤔
+## COMO FUNCIONA?
 fasfasfasfasf
