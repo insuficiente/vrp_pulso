@@ -50,5 +50,5 @@ Pulso_CFG.Tempo_Respawn = 600
 ^^^ Altere para o tempo que você deseja. Recomendo o mesmo tempo que demora para o seu player poder respawnar novamente ao seu servidor.
 <br>
 <br>
-> OBS.: *O tempo que você colocar será dividido por **três**, e cada terço será uma parte para cada estado do player.
+*O tempo que você colocar será dividido por **três**, e cada terço será uma parte para cada estado do player.
 Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
