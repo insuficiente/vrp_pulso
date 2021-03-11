@@ -41,3 +41,4 @@ Pulso_CFG.Ems_Perm = "ems.permissao"
 -- Permissão do Admin
 Pulso_CFG.Adm_Perm = "administrador.permissao"
 ```
+Altere para as permissões que você utiliza.
