@@ -45,6 +45,7 @@ Pulso_CFG.Adm_Perm = "administrador.permissao"
 <br>
 <br>
 ```lua
--- Tempo de respawn, será dividida em três partes(Ótimo estado, Estado de Alerta, Estado Grave)
+-- Tempo de respawn, será dividida em três partes(Ótimo estado, Estado de Alerta e Estado Grave)
 Pulso_CFG.Tempo_Respawn = 600 
 ```
+^^^ Altere para o tempo total que você deseja que o player fique vivo até certo ponto.
