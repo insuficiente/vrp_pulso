@@ -29,9 +29,6 @@ Os seguintes estados são:
 - ESTADO DE ALERTA (**50Bpm - 70Bpm**) || (⅓ do tempo definido)
 - ESTADO GRAVE (**30Bpm - 45Bpm**) || (⅓ do tempo definido)
 <br>
-OBS.: **O tempo que você colocar será dividido por três, e cada terço será uma parte para cada estado do player.
-Com 600 segundos, o estado do player irá mudar a cada 200 segundos.**
-
 
 ## COMO CONFIGURAR?
 No arquivo `config.lua` você verá as seguintes linhas:
@@ -51,3 +48,7 @@ Pulso_CFG.Adm_Perm = "administrador.permissao"
 Pulso_CFG.Tempo_Respawn = 600 
 ```
 ^^^ Altere para o tempo que você deseja. Recomendo o mesmo tempo que demora para o seu player poder respawnar novamente ao seu servidor.
+<br>
+<br>
+Obs.: *O tempo que você colocar será dividido por três, e cada terço será uma parte para cada estado do player.
+Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
