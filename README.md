@@ -19,7 +19,7 @@
 O plugin é chamado através do comando **/pulso**, e apenas pode ser utilizado por um **administrador** ou um **médico**.
 <br>
 <br>
-Composto por três variações de **Bpm**(batimentos por minuto), que determina o estado do player pela a quantidade de tempo que ele ficou deitado no aguardo de um médico.
+Composto por três variações de **Bpm**(*batimentos por minuto*), que determina o estado do player pela a quantidade de tempo que ele ficou deitado no aguardo de um médico.
 - ÓTIMO ESTADO
 - ESTADO DE ALERTA
 - ESTADO GRAVE
