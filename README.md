@@ -1,4 +1,4 @@
-# VRP_PULSO [ÚNICO]
+# VRP_PULSO [**ÚNICO**] | [**vRPeX**]
 
 > Precisa de algum script próprio para o seu servidor? Nos dê um toque no nosso Discord para encomendar um script totalmente pensado por **você**. Te montaremos um orçamento justo pelo o que o script oferece.
 
