@@ -29,8 +29,7 @@ Os seguintes estados são:
 - ESTADO DE ALERTA (**50Bpm - 70Bpm**) || (⅓ do tempo definido)
 - ESTADO GRAVE (**30Bpm - 45Bpm**) || (⅓ do tempo definido)
 <br>
-<br>
-O tempo que você colocar será dividido por três, e cada terço será uma parte para cada estado do player.
+OBS: O tempo que você colocar será dividido por três, e cada terço será uma parte para cada estado do player.
 <br>
 Com 600 segundos, o estado do player irá mudar a cada 200 segundos.
 
