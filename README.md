@@ -32,3 +32,6 @@ Os seguintes estados são:
 <br>
 
 ## COMO CONFIGURAR?
+```lua
+Pulso_CFG.Ems_Perm = "ems.permissao"
+```
