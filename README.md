@@ -20,7 +20,7 @@
 O plugin é chamado através do comando **/pulso**, e apenas pode ser utilizado por um **administrador** ou um **médico**(permissões devem ser alteradas e configuradas no arquivo `config.lua`).
 <br>
 <br>
-Composto por três variações de **Bpm**(*batimentos por minuto*), que determinam o estado do player pela a quantidade de tempo que ele ficou deitado no aguardo de um médico.
+Composto por três variações de **Bpm**(*batimentos por minuto*) que determinam o estado do player pela a quantidade de tempo que ele ficou deitado no aguardo de um médico.
 - ÓTIMO ESTADO (**80Bpm - 100Bpm**)
 - ESTADO DE ALERTA (**50Bpm - 70Bpm**)
 - ESTADO GRAVE (**30Bpm - 45Bpm**)
