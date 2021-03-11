@@ -14,9 +14,14 @@
 <br>
 
 ## COMO FUNCIONA?
-É um plugin onde o SAMU/EMS pode ter controle da pulsação de um player quando ele estiver deitado na espera de uma ambulância.
+É um plugin onde o **SAMU**/**EMS** pode ter controle da pulsação de um player quando ele estiver deitado na espera de uma ambulância.
 <br>
 O plugin é chamado através do comando **/pulso**, e apenas pode ser utilizado por um **administrador** ou um **médico**.
+<br>
+É composto por três variações de **Bpm**(batimentos por minuto), que determina o estado do player:
+- ÓTIMO ESTADO
+- ESTADO DE ALERTA
+- ESTADO GRAVE
 
 <br>
 
