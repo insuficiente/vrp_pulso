@@ -14,7 +14,4 @@
 <br>
 
 ## Como funciona este script? 🤔
-- ata
-- ata
-- ata
-
+ata
