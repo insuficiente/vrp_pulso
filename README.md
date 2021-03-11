@@ -24,9 +24,9 @@ Composto por três variações de **Bpm**(*batimentos por minuto*) que determina
 <br>
 <br>
 Os seguintes estados são:
-- ÓTIMO ESTADO (**80Bpm - 100Bpm**) | ()
-- ESTADO DE ALERTA (**50Bpm - 70Bpm**) | ()
-- ESTADO GRAVE (**30Bpm - 45Bpm**) | ()
+- ÓTIMO ESTADO (**80Bpm - 100Bpm**) || (⅓ do tempo definido)
+- ESTADO DE ALERTA (**50Bpm - 70Bpm**) || ()
+- ESTADO GRAVE (**30Bpm - 45Bpm**) || ()
 
 <br>
 
