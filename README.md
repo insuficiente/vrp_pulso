@@ -14,4 +14,9 @@
 <br>
 
 ## COMO FUNCIONA?
-fasfasfasfasf
+- É um plugin onde o SAMU/EMS pode ter controle da pulsação de um player quando ele estiver deitado na espera de uma ambulância.
+O plugin é chamado através do comando /pulso, e apenas pode ser utilizado por um admnistrador ou um médico.
+
+<br>
+
+## COMO CONFIGURAR?
