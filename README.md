@@ -1,6 +1,6 @@
 # VRP_PULSO [**CONFIGURÁVEL**] || [**vRPeX**]
 
-> Precisa de algum plugin próprio para o seu servidor? Nos dê um toque no nosso Discord para encomendar um plugin totalmente pensado por **você**. Montaremos um orçamento justo pelo o que o plugin te oferece.
+> Precisa de algum plugin próprio para o seu servidor? Nos dê um toque no nosso Discord para encomendar um plugin totalmente pensado por **você**. Montaremos um orçamento justo pelo o que o plugin te oferece. 😉
 
 ```
    _____ .__                      _____.__       .__               __          
@@ -13,4 +13,4 @@
 
 <br>
 
-## Como funciona este script?
+## Como funciona este script? 🤔
