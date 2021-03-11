@@ -32,6 +32,12 @@ Os seguintes estados são:
 <br>
 
 ## COMO CONFIGURAR?
+No arquivo `config.lua` você verá as seguintes linhas:
 ```lua
+-- Permissão do EMS/Médico
 Pulso_CFG.Ems_Perm = "ems.permissao"
+```
+```lua
+-- Permissão do Admin
+Pulso_CFG.Adm_Perm = "administrador.permissao"
 ```
