@@ -60,4 +60,4 @@ Estou na minha comunidade te esperando para te ajudar!
 <br>
 Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/Exjftynpe9
 
-Te desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
+### Te desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
