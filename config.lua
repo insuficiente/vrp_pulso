@@ -42,21 +42,21 @@ Pulso_CFG.PulsoCfg = {
 		Pulso = {
 			MIN = 80,    -- Pulso Mínimo
 			MAX = 100,   -- Pulso Máximo
-			REVIVER = 90 -- Chance de reviver o player
+			--REVIVER = 90 -- Chance de reviver o player | Futura Atualização
 		}
 	},
 	Pulso_CFG.Estado_Alerta = {
 		Pulso = {
 			MIN = 50,    -- Pulso Mínimo
 			MAX = 70,    -- Pulso Máximo
-			REVIVER = 65 -- Chance de reviver o player
+			--REVIVER = 65 -- Chance de reviver o player | Futura Atualização
 		}
 	},
 	Pulso_CFG.Estado_Grave = {
 		Pulso = {
 			MIN = 30,    -- Pulso Mínimo
 			MAX = 45,    -- Pulso Máximo
-			REVIVER = 45 -- Chance de reviver o player
+			--REVIVER = 45 -- Chance de reviver o player | Futura Atualização
 		}
 	}
 }
