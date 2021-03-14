@@ -25,6 +25,7 @@ Seria bem feio da sua parte vender um plugin gratuito, hein?
 
 DESEJAMOS UM ÓTIMO ROLEPLAY PARA A SUA CIDADE. ESPERAMOS QUE OS SEUS PLAYERS TENHAM A MELHOR EXPERIÊNCIA COM OS NOSSOS SCRIPTS.
 ]]
+
 local Pulso_CFG = {}
 
 -- Permissão do EMS/Médico
