@@ -25,40 +25,34 @@ Seria bem feio da sua parte vender um plugin gratuito, hein?
 
 DESEJAMOS UM ÓTIMO ROLEPLAY PARA A SUA CIDADE. ESPERAMOS QUE OS SEUS PLAYERS TENHAM A MELHOR EXPERIÊNCIA COM OS NOSSOS SCRIPTS.
 ]]
-local Pulso_CFG = {}
+local Pulso = {}
 
 -- Permissão do EMS/Médico
-Pulso_CFG.Ems_Perm = "ems.permissao"
+Pulso.Ems_Perm = "ems.permissao"
 
 -- Permissão do Admin
-Pulso_CFG.Adm_Perm = "administrador.permissao"
+Pulso.Adm_Perm = "administrador.permissao"
 
 -- Tempo de respawn, será dividida em três partes(Ótimo estado, Estado de Alerta e Estado Grave)
-Pulso_CFG.Tempo_Respawn = 600 
+Pulso.Tempo_Respawn = 600 
 
 -- Configuração para a pulsagem do player, você pode alterar, porém já está configurado.
-Pulso_CFG.PulsoCfg = {
-	Pulso_CFG.Otimo_Estado = {
-		Pulso = {
-			MIN = 80,    -- Pulso Mínimo
-			MAX = 100,   -- Pulso Máximo
-			--REVIVER = 90 -- Chance de reviver o player | Futura Atualização
-		}
+Pulso.Cfg = {
+	Otimo_Estado = {
+		MIN = 60,    -- Pulso Mínimo
+		MAX = 80     -- Pulso Máximo
+		--REVIVER = 90
 	},
-	Pulso_CFG.Estado_Alerta = {
-		Pulso = {
-			MIN = 50,    -- Pulso Mínimo
-			MAX = 70,    -- Pulso Máximo
-			--REVIVER = 65 -- Chance de reviver o player | Futura Atualização
-		}
+	Estado_Alerta = {
+		MIN = 40,    -- Pulso Mínimo
+		MAX = 60     -- Pulso Máximo
+		--REVIVER = 80
 	},
-	Pulso_CFG.Estado_Grave = {
-		Pulso = {
-			MIN = 30,    -- Pulso Mínimo
-			MAX = 45,    -- Pulso Máximo
-			--REVIVER = 45 -- Chance de reviver o player | Futura Atualização
-		}
+	Estado_Grave = {
+		MIN = 20,    -- Pulso Mínimo
+	    MAX = 40     -- Pulso Máximo
+	    --REVIVER = 65
 	}
 }
 
-return Pulso_CFG
+return Pulso
