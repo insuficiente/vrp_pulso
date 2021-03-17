@@ -15,19 +15,19 @@ Eu sou
 <br>
 
 ## COMO FUNCIONA?
-É um plugin onde o **SAMU**/**EMS** pode ter controle da pulsação de um player enquanto ele estiver deitado na espera de uma ambulância.
+É um plugin onde o SAMU/EMS pode ter controle da pulsação de um player enquanto ele estiver deitado na espera de uma ambulância.
 <br>
 <br>
-O plugin é chamado através do comando **/pulso**, e apenas pode ser utilizado por um **administrador** ou um **médico**(permissões devem ser alteradas e configuradas no arquivo `config.lua`).
+O plugin é chamado através do comando **/pulso**, e apenas pode ser utilizado por um administrador ou um médico(permissões devem ser alteradas e configuradas no arquivo `config.lua`).
 <br>
 <br>
-Composto por três variações de **Bpm**(*batimentos por minuto*) que determinam o **ESTADO DO PLAYER** pela a quantidade de tempo que ele ficou deitado no aguardo de um médico.
+Composto por três variações de Bpm(*batimentos por minuto*) que determinam o ESTADO DO PLAYER pela a quantidade de tempo que ele ficou deitado no aguardo de um médico.
 <br>
 <br>
 Os seguintes estados são:
-- ÓTIMO ESTADO (**80Bpm - 100Bpm**) || (⅓ do tempo definido)
-- ESTADO DE ALERTA (**50Bpm - 70Bpm**) || (⅓ do tempo definido)
-- ESTADO GRAVE (**30Bpm - 45Bpm**) || (⅓ do tempo definido)
+- ÓTIMO ESTADO (80Bpm - 100Bpm) || (⅓ do tempo definido)
+- ESTADO DE ALERTA (50Bpm - 70Bpm) || (⅓ do tempo definido)
+- ESTADO GRAVE (30Bpm - 45Bpm) || (⅓ do tempo definido)
 <br>
 
 ## COMO CONFIGURAR?
@@ -73,7 +73,7 @@ Pulso.Cfg = {
 	}
 }
 ```
-Aqui você pode escolher o pulso para cada estado do player. Porém não é obrigatório e já está configurado.
+^ Aqui você pode escolher o pulso para cada estado do player. Porém não é obrigatório e já está configurado.
 <br>
 <br>
 
