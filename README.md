@@ -54,10 +54,32 @@ Pulso_CFG.Tempo_Respawn = 600
 Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
 <br>
 <br>
+```lua
+Pulso.Cfg = {
+	Otimo_Estado = {
+		MIN = 60,    -- Pulso Mínimo
+		MAX = 80     -- Pulso Máximo
+		--REVIVER = 90 (Atualizacao futura)
+	},
+	Estado_Alerta = {
+		MIN = 40,    -- Pulso Mínimo
+		MAX = 60     -- Pulso Máximo
+		--REVIVER = 80 (Atualizacao futura)
+	},
+	Estado_Grave = {
+		MIN = 20,    -- Pulso Mínimo
+	    MAX = 40     -- Pulso Máximo
+	    --REVIVER = 65 (Atualizacao futura)
+	}
+}
+```
+Aqui você pode escolher o pulso para cada estado do player. Porém não é obrigatório e já está configurado.
+<br>
+<br>
 
 ## DÚVIDAS?
 Estou na minha comunidade te esperando para te ajudar!
 <br>
 Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/Exjftynpe9
 
-### Desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
+#### Desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
