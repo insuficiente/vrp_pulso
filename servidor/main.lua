@@ -38,12 +38,19 @@ RegisterCommand('pulso', function(source,args,rawCommand)
 
 	if vRP.hasPermission(user_id, Pulso.Adm_Perm) or vRP.hasPermission(user_id, Pulso.Ems_Perm) then
 		if player_proximo then
-			TriggerClientEvent('ems:verpulso', source, player_proximo)
-			vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
+			if vRPclient.isInComa(player_proximo) then
+				TriggerClientEvent('insuficiente:ver_pulso', source)
+				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
+			else
+				TriggerClientEvent("Notify", source, "negado", "O player mais próximo de você está vivo, tente em um player deitado! 😥")
+				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")				
+			end
 		else
 			TriggerClientEvent("Notify", source, "negado", "Não há nenhum player próximo para digitar esse comando! 😥")
+			vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
 		end
 	else
 		TriggerClientEvent("Notify", source, "negado", "Infelizmente você não tem permissão para executar este comando! 😥")
+		vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
 	end
 end)
