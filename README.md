@@ -69,7 +69,7 @@ Pulso.Cfg = {
 	Estado_Grave = {
 		MIN = 20,    -- Pulso Mínimo
 		MAX = 40     -- Pulso Máximo
-	    --REVIVER = 65 (Atualizacao futura)
+		--REVIVER = 65 (Atualizacao futura)
 	}
 }
 ```
