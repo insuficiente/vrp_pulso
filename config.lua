@@ -41,17 +41,17 @@ Pulso.Cfg = {
 	Otimo_Estado = {
 		MIN = 60,    -- Pulso Mínimo
 		MAX = 80     -- Pulso Máximo
-		--REVIVER = 90
+		--REVIVER = 90 (Atualizacao futura)
 	},
 	Estado_Alerta = {
 		MIN = 40,    -- Pulso Mínimo
 		MAX = 60     -- Pulso Máximo
-		--REVIVER = 80
+		--REVIVER = 80 (Atualizacao futura)
 	},
 	Estado_Grave = {
 		MIN = 20,    -- Pulso Mínimo
 	    MAX = 40     -- Pulso Máximo
-	    --REVIVER = 65
+	    --REVIVER = 65 (Atualizacao futura)
 	}
 }
 
