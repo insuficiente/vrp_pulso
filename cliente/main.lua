@@ -33,14 +33,24 @@ vRP = Proxy.getInterface("vRP")
 tempo_dividir = (Pulso.Tempo_Respawn / 3)
 tempo_respawn = {}
 
-local health
-local pulse
+-- Créditos para xander1998(https://forum.cfx.re/t/get-nearest-player-to-ped/157309/3)
+-- Thanks for helping us with that function, hope you see it <3
+function GetPedInFront()
+	local player = PlayerId()
+	local plyPed = GetPlayerPed(player)
+	local plyPos = GetEntityCoords(plyPed, false)
+	local plyOffset = GetOffsetFromEntityInWorldCoords(plyPed, 0.0, 1.3, 0.0)
+	local rayHandle = StartShapeTestCapsule(plyPos.x, plyPos.y, plyPos.z, plyOffset.x, plyOffset.y, plyOffset.z, 1.0, 12, plyPed, 7)
+	local _, _, _, _, ped = GetShapeTestResult(rayHandle)
+	return ped
+end
 
 Citizen.CreateThread(function()
 	contador = 0
 
 	while 1 do
-		vida = GetEntityHealth(GetPlayerPed(player_proximo))
+		local ped = GetPedInFront()
+		vida = GetEntityHealth(ped)
 		Citizen.Wait(1000)
 
 		if vida <= 101 then
@@ -53,18 +63,17 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('ems:verpulso')
-AddEventHandler('ems:verpulso', function(player_proximo)
-
-	local health = GetEntityHealth(GetPlayerPed(player_proximo))
+RegisterNetEvent('insuficiente:ver_pulso')
+AddEventHandler('insuficiente:ver_pulso', function()
+	local ped = GetPedInFront()
 
 	for i = 1, 3 do
-	    tempo_respawn[i] = tempo_dividir * i -- salvamos na array
+	    tempo_respawn[i] = tempo_dividir * i -- Multiplicamos por i
 	end
 
 	while(contador <= Pulso.Tempo_Respawn)
 	do
-		local health = GetEntityHealth(GetPlayerPed(player_proximo))
+		local health = GetEntityHealth(ped)
 
 		if health <= 101 then
 			if (contador < tempo_respawn[1]) then
