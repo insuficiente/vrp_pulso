@@ -40,17 +40,17 @@ Pulso.Tempo_Respawn = 600
 Pulso.Cfg = {
 	Otimo_Estado = {
 		MIN = 60,    -- Pulso Mínimo
-		MAX = 80     -- Pulso Máximo
+		MAX = 80,    -- Pulso Máximo
 		REVIVER = 90 -- Chance de reviver
 	},
 	Estado_Alerta = {
 		MIN = 40,    -- Pulso Mínimo
-		MAX = 60     -- Pulso Máximo
+		MAX = 60,    -- Pulso Máximo
 		REVIVER = 75 -- Chance de reviver
 	},
 	Estado_Grave = {
 		MIN = 20,    -- Pulso Mínimo
-	    MAX = 40     -- Pulso Máximo
+	    MAX = 40,    -- Pulso Máximo
 	    REVIVER = 55 -- Chance de reviver
 	}
 }
