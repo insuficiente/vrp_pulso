@@ -29,6 +29,9 @@ local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 local Pulso = module('vrp_pulso', 'config')
 
+wooow = {}
+Tunnel.bindInterface("vrp_pulso", wooow)
+
 vRP = Proxy.getInterface("vRP")
 tempo_dividir = (Pulso.Tempo_Respawn / 3)
 tempo_respawn = {}
@@ -79,7 +82,7 @@ AddEventHandler('insuficiente:ver_pulso', function()
 			if (contador < tempo_respawn[1]) then
 				pulse = (math.random(Pulso.Cfg.Otimo_Estado.MIN, Pulso.Cfg.Otimo_Estado.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ÓTIMO ESTADO!")
-				chance_reviver = maybe(Pulso.Cfg.Otimo_Estado.REVIVER)
+				wooow.chance_reviver = maybe(Pulso.Cfg.Otimo_Estado.REVIVER)
 				-- envia pro reviver, e ele armazena esse valor
 				-- reviver recebe 1 ou 0, 1 = reviveu, 0 = ta morto chefe
 				return				
@@ -87,18 +90,19 @@ AddEventHandler('insuficiente:ver_pulso', function()
 			elseif (contador >= (tempo_respawn[1] + 1) and contador <= (tempo_respawn[2] - 1)) then
 				pulse = (math.random(Pulso.Cfg.Estado_Alerta.MIN, Pulso.Cfg.Estado_Alerta.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ESTADO DE ALERTA!")
-				chance_reviver = maybe(Pulso.Cfg.Estado_Alerta.REVIVER)
+				wooow.chance_reviver = maybe(Pulso.Cfg.Estado_Alerta.REVIVER)
 				return
 
 			elseif (contador >= (tempo_respawn[2] + 1) and contador <= tempo_respawn[3]) then
 				pulse = (math.random(Pulso.Cfg.Estado_Grave.MIN, Pulso.Cfg.Estado_Grave.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ESTADO GRAVE!")
-				chance_reviver = maybe(Pulso.Cfg.Estado_Grave.REVIVER)
+				wooow.chance_reviver = maybe(Pulso.Cfg.Estado_Grave.REVIVER)
 				return
 
 			elseif (contador >= tempo_respawn[3]) then
 				pulse = 0
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está SEM PULSAÇÃO!")
+				wooow.chance_reviver = maybe(5)
 				return
 			end
 		end
@@ -110,4 +114,4 @@ AddEventHandler('insuficiente:ver_pulso', function()
 	end
 end, false)
 
-function maybe(x) if 100 * math.random() < x then print(1) else print(0) end end
+function maybe(x) if 100 * math.random() < x then return 1 else return 0 end end
