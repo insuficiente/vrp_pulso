@@ -77,18 +77,21 @@ AddEventHandler('insuficiente:ver_pulso', function()
 
 		if health <= 101 then
 			if (contador < tempo_respawn[1]) then
-				pulse = (math.random(80, 100))
+				pulse = (math.random(Pulso.Cfg.Otimo_Estado.MIN, Pulso.Cfg.Otimo_Estado.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ÓTIMO ESTADO!")
+				chance_reviver = maybe(Pulso.Cfg.Otimo_Estado.REVIVER)
 				return				
 
 			elseif (contador >= (tempo_respawn[1] + 1) and contador <= (tempo_respawn[2] - 1)) then
-				pulse = (math.random(50, 70))
+				pulse = (math.random(Pulso.Cfg.Estado_Alerta.MIN, Pulso.Cfg.Estado_Alerta.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ESTADO DE ALERTA!")
+				chance_reviver = maybe(Pulso.Cfg.Estado_Alerta.REVIVER)
 				return
 
 			elseif (contador >= (tempo_respawn[2] + 1) and contador <= tempo_respawn[3]) then
-				pulse = (math.random(30, 45))
+				pulse = (math.random(Pulso.Cfg.Estado_Grave.MIN, Pulso.Cfg.Estado_Grave.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ESTADO GRAVE!")
+				chance_reviver = maybe(Pulso.Cfg.Estado_Grave.REVIVER)
 				return
 
 			elseif (contador >= tempo_respawn[3]) then
@@ -104,3 +107,5 @@ AddEventHandler('insuficiente:ver_pulso', function()
 		end
 	end
 end, false)
+
+function maybe(x) if 100 * math.random() < x then print(1) else print(0) end end
