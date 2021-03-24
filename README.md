@@ -73,7 +73,7 @@ Pulso.Cfg = {
 	}
 }
 ```
-^ Aqui você pode escolher o pulso para cada estado do player. E a chance de reviver por cada um.
+^ Aqui você pode escolher o pulso para cada estado do player. E também a chance de reviver por cada um.
 <br>
 <br>
 
