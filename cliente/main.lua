@@ -80,6 +80,7 @@ AddEventHandler('insuficiente:ver_pulso', function()
 				pulse = (math.random(Pulso.Cfg.Otimo_Estado.MIN, Pulso.Cfg.Otimo_Estado.MAX))
 				TriggerEvent('chatMessage', "EMS:", {255, 0, 0}, "O player está deitado a " .. contador .. " segundos! Sua pulsação é de: " .. pulse .. "BPM e ele está em um ÓTIMO ESTADO!")
 				chance_reviver = maybe(Pulso.Cfg.Otimo_Estado.REVIVER)
+				-- envia pro reviver, e ele armazena esse valor
 				return				
 
 			elseif (contador >= (tempo_respawn[1] + 1) and contador <= (tempo_respawn[2] - 1)) then
