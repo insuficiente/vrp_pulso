@@ -37,11 +37,13 @@ client_scripts {
 	'lib/Tunnel.lua',
 	'lib/Proxy.lua',
 	'config.lua',
-	'cliente/main.lua'
+	'cliente/main.lua',
+	'insuficiente.lua'
 }
 
 server_scripts {
 	'@vrp/lib/utils.lua',
 	'config.lua',
-	'servidor/main.lua'
+	'servidor/main.lua',
+	'insuficiente.lua'
 }
