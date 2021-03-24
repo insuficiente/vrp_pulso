@@ -76,6 +76,9 @@ Pulso.Cfg = {
 ^ Aqui você pode escolher o pulso para cada estado do player. E também a chance de reviver por cada um.
 <br>
 <br>
+Este plugin necessita de compatibilidade com o /re! Para que funcione, deixarei o /re em uma pasta já configurado para este script.
+<br>
+<br>
 
 ## DÚVIDAS?
 Estou na minha comunidade te esperando para te ajudar!
