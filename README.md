@@ -59,21 +59,21 @@ Pulso.Cfg = {
 	Otimo_Estado = {
 		MIN = 60,    -- Pulso Mínimo
 		MAX = 80     -- Pulso Máximo
-		--REVIVER = 90 (Atualizacao futura)
+		REVIVER = 90
 	},
 	Estado_Alerta = {
 		MIN = 40,    -- Pulso Mínimo
 		MAX = 60     -- Pulso Máximo
-		--REVIVER = 80 (Atualizacao futura)
+		REVIVER = 75
 	},
 	Estado_Grave = {
 		MIN = 20,    -- Pulso Mínimo
 		MAX = 40     -- Pulso Máximo
-		--REVIVER = 65 (Atualizacao futura)
+		REVIVER = 55
 	}
 }
 ```
-^ Aqui você pode escolher o pulso para cada estado do player. Porém não é obrigatório e já está configurado.
+^ Aqui você pode escolher o pulso para cada estado do player. E a chance de reviver por cada um.
 <br>
 <br>
 
