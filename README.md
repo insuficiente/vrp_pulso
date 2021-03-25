@@ -76,7 +76,7 @@ Pulso.Cfg = {
 ^ Aqui você pode escolher o pulso para cada estado do player. E também a chance de reviver por cada um.
 <br>
 <br>
-Esse plugin já acompanha o /re(reanimar) para o EMS. Se você já tem, por favor o remova para evitar conflitos.
+Esse plugin já acompanha o /reanimar para o EMS. Se você já tem, por favor o remova para evitar conflitos.
 O comando para reanimar é: /reanimar, ao invés de /re.
 <br>
 <br>
