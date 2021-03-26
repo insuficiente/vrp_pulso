@@ -29,12 +29,11 @@ local Tunnel = module("vrp", "lib/Tunnel")
 local Proxy = module("vrp", "lib/Proxy")
 local Pulso = module("vrp_pulso", "config")
 
-kekek = Tunnel.getInterface("vrp_pulso")
+cnVRP = {}
+Tunnel.bindInterface("vrp_pulso", cnVRP)
 
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
-
-chance_de_reviver = nil
 
 RegisterCommand('pulso', function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
@@ -43,8 +42,7 @@ RegisterCommand('pulso', function(source,args,rawCommand)
 	if vRP.hasPermission(user_id, Pulso.Adm_Perm) or vRP.hasPermission(user_id, Pulso.Ems_Perm) then
 		if player_proximo then
 			if vRPclient.isInComa(player_proximo) then
-				TriggerClientEvent('insuficiente:ver_pulso', source, chance_de_reviver)
-				print(chance_de_reviver)
+				TriggerClientEvent('insuficiente:ver_pulso', source)
 				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
 			else
 				TriggerClientEvent("Notify", source, "importante", "O player mais próximo de você está vivo, tente em um player deitado!")
@@ -60,18 +58,15 @@ RegisterCommand('pulso', function(source,args,rawCommand)
 	end
 end)
 
-RegisterCommand('testeee', function()
-	print(chance_de_reviver)
-end)
-
-RegisterCommand('reanimar', function(source,args,rawCommand)
+function cnVRP.ReanimarPlayer(chance_de_reviver)
+	local source = source
 	local user_id = vRP.getUserId(source)
 	local nplayer = vRPclient.getNearestPlayer(source, 2)
 
 	if vRP.hasPermission(user_id, "reviver.permissao") or vRP.hasPermission(user_id, Pulso.Ems_Perm) or vRP.hasPermission(user_id, Pulso.Adm_Perm) then
 		if nplayer then
 			if vRPclient.isInComa(nplayer) then
-				--if kekek.chance_reviver == 1 then
+				if chance_de_reviver == 1 then
 					local dificultar_reviver = maybe(40)
 
 					if dificultar_reviver == 1 then
@@ -95,9 +90,9 @@ RegisterCommand('reanimar', function(source,args,rawCommand)
 							TriggerClientEvent("Notify", source, "importante", "Você não conseguiu reanimar este player, continue tentando!")
 						end)
 					end
-				--else
-				--	TriggerClientEvent("Notify", source, "negado", "Este player está sem pulso, você não consegue mais reviver ele!")
-				--end
+				else
+					TriggerClientEvent("Notify", source, "negado", "Este player está sem pulso, você não consegue mais reviver ele!")
+				end
 			else
 				TriggerClientEvent("Notify", source, "importante", "O player mais próximo de você está vivo, tente em um player deitado!")
 				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")	
@@ -110,6 +105,6 @@ RegisterCommand('reanimar', function(source,args,rawCommand)
 		TriggerClientEvent("Notify", source, "negado", "Infelizmente você não tem permissão para executar este comando! 😥")
 		vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")		
 	end
-end)
+end
 
 function maybe(x) if 100 * math.random() < x then return 1 else return 0 end end
