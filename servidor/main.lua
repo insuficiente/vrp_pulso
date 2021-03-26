@@ -34,6 +34,8 @@ kekek = Tunnel.getInterface("vrp_pulso")
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 
+chance_de_reviver = nil
+
 RegisterCommand('pulso', function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
 	local player_proximo = vRPclient.getNearestPlayer(source, 5)
@@ -41,20 +43,25 @@ RegisterCommand('pulso', function(source,args,rawCommand)
 	if vRP.hasPermission(user_id, Pulso.Adm_Perm) or vRP.hasPermission(user_id, Pulso.Ems_Perm) then
 		if player_proximo then
 			if vRPclient.isInComa(player_proximo) then
-				TriggerClientEvent('insuficiente:ver_pulso', source)
+				TriggerClientEvent('insuficiente:ver_pulso', source, chance_de_reviver)
+				print(chance_de_reviver)
 				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
 			else
-				TriggerClientEvent("Notify", source, "negado", "O player mais próximo de você está vivo, tente em um player deitado!")
+				TriggerClientEvent("Notify", source, "importante", "O player mais próximo de você está vivo, tente em um player deitado!")
 				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")				
 			end
 		else
-			TriggerClientEvent("Notify", source, "negado", "Não há nenhum player próximo para digitar esse comando! 😥")
+			TriggerClientEvent("Notify", source, "negado", "Não há nenhum player próximo para executar este comando!")
 			vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
 		end
 	else
 		TriggerClientEvent("Notify", source, "negado", "Infelizmente você não tem permissão para executar este comando! 😥")
 		vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")
 	end
+end)
+
+RegisterCommand('testeee', function()
+	print(chance_de_reviver)
 end)
 
 RegisterCommand('reanimar', function(source,args,rawCommand)
@@ -64,7 +71,7 @@ RegisterCommand('reanimar', function(source,args,rawCommand)
 	if vRP.hasPermission(user_id, "reviver.permissao") or vRP.hasPermission(user_id, Pulso.Ems_Perm) or vRP.hasPermission(user_id, Pulso.Adm_Perm) then
 		if nplayer then
 			if vRPclient.isInComa(nplayer) then
-				if kekek.chance_reviver == 1 then
+				--if kekek.chance_reviver == 1 then
 					local dificultar_reviver = maybe(40)
 
 					if dificultar_reviver == 1 then
@@ -77,28 +84,27 @@ RegisterCommand('reanimar', function(source,args,rawCommand)
 		                	vRPclient._stopAnim(source,false)
 		                	vRP.giveMoney(user_id, math.random(250, 350))
 		                	TriggerClientEvent('cancelando', source, false)
+							TriggerClientEvent("Notify", source, "sucesso", "Você conseguiu reanimar o player!")
 		            	end)
-						TriggerClientEvent("Notify", source, "sucesso", "Você conseguiu reanimar o player!")
 					else
-						TriggerClientEvent('cancelando', source, true)
 						vRPclient._playAnim(source,false,{{"amb@medic@standing@tendtodead@base","base"},{"mini@cpr@char_a@cpr_str","cpr_pumpchest"}}, true)
 						TriggerClientEvent("progress", source, 30000, "Reanimando o player")
 
 		            	SetTimeout(30000, function()
 		                	vRPclient._stopAnim(source, false)
-		            	end)
-		            	TriggerClientEvent("Notify", source, "importante", "Você não conseguiu reanimar este player, continue tentando!")
+							TriggerClientEvent("Notify", source, "importante", "Você não conseguiu reanimar este player, continue tentando!")
+						end)
 					end
-				else
-					TriggerClientEvent("Notify", source, "negado", "Este player está sem pulso, você não consegue mais reviver ele!")
-				end
+				--else
+				--	TriggerClientEvent("Notify", source, "negado", "Este player está sem pulso, você não consegue mais reviver ele!")
+				--end
 			else
-				TriggerClientEvent("Notify", source, "negado", "O player mais próximo de você está vivo, tente em um player deitado!")
+				TriggerClientEvent("Notify", source, "importante", "O player mais próximo de você está vivo, tente em um player deitado!")
 				vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")	
 			end
 		else	
-			TriggerClientEvent("Notify", source, "negado", "Não há nenhum player próximo para digitar esse comando! 😥")
-			vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")						
+			TriggerClientEvent("Notify", source, "negado", "Não há nenhum player próximo para executar este comando!")
+			vRPclient.playSound(source, "Event_Message_Purple", "GTAO_FM_Events_Soundset")					
 		end
 	else
 		TriggerClientEvent("Notify", source, "negado", "Infelizmente você não tem permissão para executar este comando! 😥")
