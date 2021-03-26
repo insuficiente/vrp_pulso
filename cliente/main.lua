@@ -18,7 +18,7 @@ Links para a nossa comunidade! 🙂
 	"Discord": "https://discord.gg/Exjftynpe9"	
 }
 
-Atualização: 12/03/2021 | v1.21.1
+Atualização: 26/03/2021 | v1.21.2
 
 Não tente revender este script/plugin, é totalmente feito pela nossa comunidade e não por você.
 Seria bem feio da sua parte vender um plugin gratuito, hein?
