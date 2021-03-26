@@ -41,17 +41,17 @@ Pulso.Cfg = {
 	Otimo_Estado = {
 		MIN = 60,    -- Pulso Mínimo
 		MAX = 80,    -- Pulso Máximo
-		REVIVER = 90 -- Chance de reviver
+		REVIVER = 90 -- Chance de reviver (%) | 0 à 100
 	},
 	Estado_Alerta = {
 		MIN = 40,    -- Pulso Mínimo
 		MAX = 60,    -- Pulso Máximo
-		REVIVER = 75 -- Chance de reviver
+		REVIVER = 75 -- Chance de reviver (%) | 0 à 100
 	},
 	Estado_Grave = {
 		MIN = 20,    -- Pulso Mínimo
 	    MAX = 40,    -- Pulso Máximo
-	    REVIVER = 55 -- Chance de reviver
+	    REVIVER = 55 -- Chance de reviver(%) | 0 à 100
 	}
 }
 
