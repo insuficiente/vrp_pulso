@@ -29,7 +29,8 @@ Os seguintes estados são:
 - ESTADO DE ALERTA (50Bpm - 70Bpm) || (⅓ do tempo definido)
 - ESTADO GRAVE (30Bpm - 45Bpm) || (⅓ do tempo definido)
 <br>
-
+O plugin também tem interação com o /reviver, que já vem incluído neste script. A cada estado que passa, diminui as chances de reviver do player.
+<br>
 ## COMO CONFIGURAR?
 No arquivo `config.lua` você verá as seguintes linhas:
 ```lua
