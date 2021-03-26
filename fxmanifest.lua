@@ -41,6 +41,8 @@ client_scripts {
 }
 
 server_scripts {
+	'lib/Tunnel.lua',
+	'lib/Proxy.lua',
 	'@vrp/lib/utils.lua',
 	'config.lua',
 	'servidor/main.lua'
