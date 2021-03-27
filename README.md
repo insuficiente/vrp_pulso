@@ -31,6 +31,7 @@ Os seguintes estados são:
 <br>
 O plugin também tem interação com o /reviver, que já vem incluído neste script. A cada estado que passa, diminui as chances de reviver do player.
 <br>
+<br>
 ## COMO CONFIGURAR?
 No arquivo `config.lua` você verá as seguintes linhas:
 ```lua
