@@ -86,6 +86,6 @@ O comando para reanimar é: /reanimar, ao invés de /re.
 Estou na minha comunidade te esperando para te ajudar!
 Você pode abrir uma solicitação de suporte digitando **-suporte** no nosso servidor do Discord!
 <br>
-Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/Exjftynpe9
+Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/jqpmr5FRuT
 
 #### Desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
