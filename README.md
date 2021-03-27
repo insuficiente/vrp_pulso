@@ -32,14 +32,6 @@ Os seguintes estados são:
 O plugin também tem interação com o /reviver, que já vem incluído neste script. A cada estado que passa, diminui as chances de reviver do player.
 <br>
 
-## DÚVIDAS?
-Estou na minha comunidade te esperando para te ajudar!
-Você pode abrir uma solicitação de suporte digitando **-suporte** no nosso servidor do Discord!
-<br>
-Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/jqpmr5FRuT
-
-#### Desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
-
 ## COMO CONFIGURAR?
 No arquivo `config.lua` você verá as seguintes linhas:
 ```lua
@@ -90,3 +82,11 @@ Esse plugin já acompanha o /reanimar para o EMS. Se você já tem, por favor o 
 O comando para reanimar é: /reanimar, ao invés de /re.
 <br>
 <br>
+
+## DÚVIDAS?
+Estou na minha comunidade te esperando para te ajudar!
+Você pode abrir uma solicitação de suporte digitando **-suporte** no nosso servidor do Discord!
+<br>
+Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/jqpmr5FRuT
+
+#### Desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
