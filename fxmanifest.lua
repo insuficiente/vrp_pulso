@@ -15,7 +15,7 @@
 Links para a nossa comunidade! 🙂
 {
 	"GitHub": "https://github.com/insuficiente",
-	"Discord": "https://discord.gg/Exjftynpe9"	
+	"Discord": "https://discord.gg/jqpmr5FRuT"	
 }
 
 Atualização: 26/03/2021 | v1.21.2
