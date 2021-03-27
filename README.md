@@ -30,7 +30,8 @@ Os seguintes estados são:
 - ESTADO GRAVE (30Bpm - 45Bpm) || (⅓ do tempo definido)
 <br>
 O plugin também tem interação com o /reviver, que já vem incluído neste script. A cada estado que passa, diminui as chances de reviver do player.
-## FODASE
+<br>
+## FODASE?
 
 ## DÚVIDAS?
 Estou na minha comunidade te esperando para te ajudar!
