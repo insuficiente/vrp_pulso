@@ -31,7 +31,6 @@ Os seguintes estados são:
 <br>
 O plugin também tem interação com o /reviver, que já vem incluído neste script. A cada estado que passa, diminui as chances de reviver do player.
 <br>
-## FODASE?
 
 ## DÚVIDAS?
 Estou na minha comunidade te esperando para te ajudar!
@@ -40,3 +39,54 @@ Você pode abrir uma solicitação de suporte digitando **-suporte** no nosso se
 Você pode entrar lá através do meu seguinte link de convite: https://discord.gg/jqpmr5FRuT
 
 #### Desejamos um ótimo Roleplay para a sua cidade. Esperamos que seus players tenham a melhor experiência com os nossos scripts.
+
+## COMO CONFIGURAR?
+No arquivo `config.lua` você verá as seguintes linhas:
+```lua
+-- Permissão do EMS/Médico
+Pulso_CFG.Ems_Perm = "ems.permissao"
+```
+```lua
+-- Permissão do Admin
+Pulso_CFG.Adm_Perm = "administrador.permissao"
+```
+^ Altere para as permissões qual você utiliza.
+<br>
+<br>
+```lua
+-- Tempo de respawn, será dividida em três partes(Ótimo estado, Estado de Alerta e Estado Grave)
+Pulso_CFG.Tempo_Respawn = 600 
+```
+^ Altere para o tempo que você deseja. Recomendo o mesmo tempo que demora para o seu player poder respawnar novamente ao seu servidor.
+<br>
+<br>
+*O tempo que você colocar será dividido por **três**, e cada terço será uma parte para cada estado do player.
+Com 600 segundos, o estado do player irá mudar a cada 200 segundos.*
+<br>
+<br>
+```lua
+Pulso.Cfg = {
+	Otimo_Estado = {
+		MIN = 60,    -- Pulso Mínimo
+		MAX = 80     -- Pulso Máximo
+		REVIVER = 90 -- Chance de reviver
+	},
+	Estado_Alerta = {
+		MIN = 40,    -- Pulso Mínimo
+		MAX = 60     -- Pulso Máximo
+		REVIVER = 75 -- Chance de reviver
+	},
+	Estado_Grave = {
+		MIN = 20,    -- Pulso Mínimo
+		MAX = 40     -- Pulso Máximo
+		REVIVER = 55 -- Chance de reviver
+	}
+}
+```
+^ Aqui você pode escolher o pulso para cada estado do player. E também a chance de reviver por cada um.
+<br>
+<br>
+Esse plugin já acompanha o /reanimar para o EMS. Se você já tem, por favor o remova para evitar conflitos.
+O comando para reanimar é: /reanimar, ao invés de /re.
+<br>
+<br>
