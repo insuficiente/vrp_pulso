@@ -28,7 +28,7 @@ DESEJAMOS UM ÓTIMO ROLEPLAY PARA A SUA CIDADE. ESPERAMOS QUE OS SEUS PLAYERS TE
 fx_version 'bodacious'
 game 'gta5'
 
-author "insuficiente#5096"
+author "insuficiente#0001"
 author "https://github.com/insuficiente"
 author "https://discord.gg/jqpmr5FRuT"
 
